@@ -219,7 +219,7 @@ def generate_forensic_pdf(report: ForensicReport, output_path: str | Path) -> Pa
     )
     story.append(Spacer(1, 0.12 * inch))
 
-    #  Payload Analysis
+    # Payload Analysis
     story.append(Paragraph("Payload Analysis", styles["SectionHeader"]))
     # Classification paragraph first
     story.append(Paragraph(_body(report.payload_class_prediction), styles["BodyText"]))
